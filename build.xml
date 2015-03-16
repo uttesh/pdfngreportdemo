@@ -8,7 +8,7 @@
 	<property name="test.dir" location="src" />
 	<property name="lib.dir" location="ext-lib" />
 	<property name="classes.dir" location="classes" />
-	<property name="testng.output.dir" value="automation_report"/>
+	
 	
 	
 	<path id="classpath.test">
@@ -38,11 +38,11 @@
 
 	<!-- ==================== runTestNG Target ==================== -->
 	<target name="runTestNG" depends="compile-test">
-		<mkdir dir="${testng.output.dir}" />
-
-		<testng outputdir="${testng.output.dir}" classpathref="classpath.test" useDefaultListeners="false"  haltonfailure="false">
+		<testng classpathref="classpath.test" useDefaultListeners="false"  haltonfailure="false">
 			<xmlfileset dir="." includes="testng.xml" />
 			<sysproperty key="pdfreport.title" value="Testing Title 123456" />
+			<sysproperty key="pdfreport.outputdir" value="E:/rivetsys/automation/pdfngreport" />
+			<sysproperty key="pdfreport.chart" value="show" />
 		</testng>
 	</target>
 	
