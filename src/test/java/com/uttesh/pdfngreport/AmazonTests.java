@@ -25,6 +25,9 @@ public class AmazonTests {
         @Test
 	public void Page3Test() {
             Reporter.log("Page3Test WAS CALLED");
+            String x = "10";
+            x.equalsIgnoreCase(x);
+            int y = Integer.parseInt(x);
             Assert.assertEquals(true,true);
 	}
 

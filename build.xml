@@ -40,9 +40,6 @@
 	<target name="runTestNG" depends="compile-test">
 		<testng classpathref="classpath.test" useDefaultListeners="false"  haltonfailure="false">
 			<xmlfileset dir="." includes="testng.xml" />
-			<sysproperty key="pdfreport.title" value="Testing Title 123456" />
-			<sysproperty key="pdfreport.outputdir" value="E:/rivetsys/automation/pdfngreport" />
-			<sysproperty key="pdfreport.chart" value="show" />
 		</testng>
 	</target>
 	
