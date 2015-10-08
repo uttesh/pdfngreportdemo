@@ -25,9 +25,15 @@
         </classes>
     </test>
 	
-	<test name="SmitJain Test">
+	<test name="SmitJain skip count Test">
         <classes>
             <class name="com.uttesh.pdfngreport.SmitJainTest" />
+        </classes>
+    </test>
+	
+    <test name="Deepalicr long method and test name Test">
+        <classes>
+            <class name="com.uttesh.pdfngreport.DeepalicrbiggggggggggggggggggggggggggggtextTest" />
         </classes>
     </test>
 	
