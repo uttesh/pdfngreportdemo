@@ -37,5 +37,11 @@
         </classes>
     </test>
 	
+	 <test name="Dynamic data provider test name ">
+        <classes>
+            <class name="com.uttesh.pdfngreport.dynamic_test_name.DynamicDataProviderTestName" />
+        </classes>
+    </test>
+	
 </suite>
 
